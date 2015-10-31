@@ -11,6 +11,9 @@
 建议直接使用 `Clang` 编译器。
 
 
+clang编译器
+--------------------
+
 代码示例:
 
 不含框架头文件的代码:
@@ -55,4 +58,13 @@
 
     如果你引入了其它的框架头文件（如: Cocoa），
     则在编译的时候需要申明: clang main.m -o main -framework Foundation -framework Cocoa
+
+
+GCC编译器
+---------------
+
+.. code:: bash
+    
+    gcc main.m -o main -framework Foundation -Wall -lobjc
+
 
