@@ -50,3 +50,9 @@
 .. code:: bash
 
     clang main.m -o main -framework Foundation
+
+::
+
+    如果你引入了其它的框架头文件（如: Cocoa），
+    则在编译的时候需要申明: clang main.m -o main -framework Foundation -framework Cocoa
+
