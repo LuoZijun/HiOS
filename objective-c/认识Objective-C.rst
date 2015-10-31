@@ -16,6 +16,13 @@ Objective-C源代码文件扩展名::
     .h          .m          .mm
 
 
-面向对象的类
+类方法的调用
 -----------------
+
+在 Objective-C 的世界里面，类方法的调用被称为 `消息发送(Message)` ::
+
+    [Recvier Method]
+
+
+其中 `Recvier` 用来存储 类方法执行后返回的数据， `Method` 表示类方法 。
 
