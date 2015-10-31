@@ -1,0 +1,52 @@
+编译 Objective-C
+=====================
+
+
+:Date: 10/31 2015
+
+
+.. contents::
+
+
+建议直接使用 `Clang` 编译器。
+
+
+代码示例:
+
+不含框架头文件的代码:
+
+.. code:: objective-c
+    
+    // main.m
+    #import <stdio.h>
+    int main( int argc, const char *argv[] ) {
+        printf("%s，%s 世界！\n", "hello", "hi");
+        return 0;
+    }
+
+编译:
+
+.. code:: bash
+
+    clang main.m -o main
+
+
+引入Objective-C框架代码:
+
+.. code:: objective-c
+    
+    // main.m
+    #import <Foundation/Foundation.h>
+    #import <stdio.h>
+
+    int main( int argc, const char *argv[] ) {
+        printf("%s，%s 世界！\n", "hello", "hi");
+        NSLog(@"NSLOG String ...");
+        return 0;
+    }
+
+编译:
+
+.. code:: bash
+
+    clang main.m -o main -framework Foundation
